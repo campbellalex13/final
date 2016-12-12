@@ -3633,11 +3633,13 @@ In the Index View, if you clicked on the Edit action in the View it would take y
     ```
   - Database.SetInitializer<DatabaseNameContext>(null);
     ```
-  - using Models
-  - using DAL
-  - using System.Data.Entity
+  - ```using ProjectName.Models```
+  - ```using ProjectName.DAL```
+  - ```using System.Data.Entity```
 6. Add Folder called 'DAL'
-7. Add Class DatabaseNameContext : DbContext to DAL folder
-	 - using Models
-	 - using System.Data.Entity
-   -	Add method public DatabaseNameContext : base("DatabaseNameContext")
+7. Add Class ```DatabaseNameContext : DbContext``` to DAL folder
+	 - using ```ProjectName.Models```
+	 - using ```System.Data.Entity```
+   -	Add method public ```DatabaseNameContext : base("DatabaseNameContext")```
+      - ```public DbSet<ModelName> Name {get; set;}```
+8. ```private DatabaseNameContext db = new DatabaseNameContext();``` in Controller
