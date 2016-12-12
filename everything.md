@@ -3621,7 +3621,7 @@ In the Index View, if you clicked on the Edit action in the View it would take y
 
 
 # Instructions To Add Database
-```
+
 1. Add Connection (Server Explorer)
 2. Add Connection String to web.config
 3. Rename Connection String to DatabaseNameContext
@@ -3630,7 +3630,9 @@ In the Index View, if you clicked on the Edit action in the View it would take y
 	- [Table("TableName")]
 	- [Key]
 5. Update Global.aspx
+    ```
   - Database.SetInitializer<DatabaseNameContext>(null);
+    ```
   - using Models
   - using DAL
   - using System.Data.Entity
@@ -3639,5 +3641,3 @@ In the Index View, if you clicked on the Edit action in the View it would take y
 	 - using Models
 	 - using System.Data.Entity
    -	Add method public DatabaseNameContext : base("DatabaseNameContext")
-
-  ```
