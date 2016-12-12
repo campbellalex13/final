@@ -12,11 +12,11 @@
 - [Dan Morain Forms](#asp-net-html-forms)
 - [Forms and Helpers](#forms-and-helpers)
 - [Validations](#annotations-and-validations)
-- [Dropdown Lists](#How-to-Create-a-Dropdown-list)
-- [Model within a model](#Model-Within-Model)
-- [Adding Authorization](#Adding-Authorization)
-- [Security](#Security)
-- [User Identity](#User-Identity)
+- [Dropdown Lists](#how-to-create-a-dropdown-list)
+- [Model within a model](#model-within-model)
+- [Adding Authorization](#adding-authorization)
+- [Security](#security)
+- [User Identity](#user-identity)
 - [Return to Previous URL](#return-to-previous-url)
 
 ## Getting Started
