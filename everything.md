@@ -19,6 +19,7 @@
 - [User Identity](#user-identity)
 - [Return to Previous URL](#return-to-previous-url)
 - [Tutorial Explanation](#tutorial-explanation)
+- [Adding a Database step-by-step instructions](#instructions-to-add-database)
 
 ## Getting Started
 
@@ -3617,3 +3618,24 @@ In the Index View, if you clicked on the Edit action in the View it would take y
 ### Delete POST Action Method
 
 ![deletepostcontroller](https://cloud.githubusercontent.com/assets/8953261/17080662/81bdd7f2-50f4-11e6-8100-5254bc165f37.png)
+
+
+# Instructions To Add Database
+
+1. Add Connection (Server Explorer)
+2. Add Connection String to web.config
+3. Rename Connection String to DatabaseNameContext
+4. Make Models
+  - (don't forget ? on ints that can be null)
+	- [Table("TableName")]
+	- [Key]
+5. Update Global.aspx
+  - Database.SetInitializer<DatabaseNameContext>(null);
+  - using Models
+  - using DAL
+  - using System.Data.Entity
+6. Add Folder called 'DAL'
+7. Add Class DatabaseNameContext : DbContext to DAL folder
+	 - using Models
+	 - using System.Data.Entity
+   -	Add method public DatabaseNameContext : base	("DatabaseNameContext")
